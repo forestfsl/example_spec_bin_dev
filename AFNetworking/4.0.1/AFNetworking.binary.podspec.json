@@ -9,7 +9,7 @@
     "Mattt Thompson": "m@mattt.me"
   },
   "source": {
-    "http": "http://localhost:8080/frameworks/AFNetworking/4.0.1/zip",
+    "http": "http://192.168.50.150:20480/frameworks/AFNetworking/4.0.1/zip",
     "type": "zip"
   },
   "platforms": {
@@ -35,76 +35,8 @@
       "PRODUCT_BUNDLE_IDENTIFIER": "com.alamofire.AFNetworking"
     }
   },
-  "source_files": "AFNetworking/AFNetworking.h",
-  "deprecated_in_favor_of": "Alamofire",
-  "vendored_frameworks": "AFNetworking.framework",
-  "description": "「   converted automatically by plugin cocoapods-bin-forest  」",
-  "subspecs": [
-    {
-      "name": "Serialization",
-      "source_files": "AFNetworking/AFURL{Request,Response}Serialization.{h,m}"
-    },
-    {
-      "name": "Security",
-      "source_files": "AFNetworking/AFSecurityPolicy.{h,m}"
-    },
-    {
-      "name": "Reachability",
-      "platforms": {
-        "ios": "9.0",
-        "osx": "10.10",
-        "tvos": "9.0"
-      },
-      "source_files": "AFNetworking/AFNetworkReachabilityManager.{h,m}"
-    },
-    {
-      "name": "NSURLSession",
-      "dependencies": {
-        "AFNetworking/Serialization": [
-
-        ],
-        "AFNetworking/Security": [
-
-        ]
-      },
-      "ios": {
-        "dependencies": {
-          "AFNetworking/Reachability": [
-
-          ]
-        }
-      },
-      "osx": {
-        "dependencies": {
-          "AFNetworking/Reachability": [
-
-          ]
-        }
-      },
-      "tvos": {
-        "dependencies": {
-          "AFNetworking/Reachability": [
-
-          ]
-        }
-      },
-      "source_files": [
-        "AFNetworking/AF{URL,HTTP}SessionManager.{h,m}",
-        "AFNetworking/AFCompatibilityMacros.h"
-      ]
-    },
-    {
-      "name": "UIKit",
-      "platforms": {
-        "ios": "9.0",
-        "tvos": "9.0"
-      },
-      "dependencies": {
-        "AFNetworking/NSURLSession": [
-
-        ]
-      },
-      "source_files": "UIKit+AFNetworking"
-    }
-  ]
+  "source_files": "bin_AFNetworking_4.0.1/Headers/*",
+  "public_header_files": "bin_AFNetworking_4.0.1/Headers/*.h",
+  "vendored_libraries": "bin_AFNetworking_4.0.1/*.a",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @slj    」"
 }
